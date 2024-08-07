@@ -1,95 +1,94 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+    <div
+      style={{ minHeight: "100vh", backgroundColor: "#18191A" }}
+      className="p-3"
+    >
+      {/* Entire App Container */}
+      <div
+        style={{ maxWidth: "700px", backgroundColor: "#242526" }}
+        className="mx-auto p-3 rounded rounded-3 shadow-sm"
+      >
+        {/* Post Owner Example*/}
+        <div className="vstack gap-3">
+          <div className="d-flex align-items-center gap-3">
+            <img
+              src="/profileImages/handsome.jpg"
+              width="48"
+              height="48"
+              className="rounded-circle"
+              style={{ objectFit: "cover" }}
             />
-          </a>
+            <span className="fw-semibold fs-5 text-white">
+              Chayanin Suatap 650610560
+            </span>
+          </div>
+
+          <span className="text-white">
+            Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207
+          </span>
+
+          <div className="d-flex align-items-center gap-1">
+            <img src="/like.svg" width={20}></img>
+            <span style={{ color: "#B0B3B8" }}>100 คน</span>
+          </div>
+          <hr className="m-0 border" />
         </div>
+
+        {/* Comment Example */}
+        <div className="d-flex gap-2 my-2">
+          <img
+            src="/profileImages/lisa.jpg"
+            width="48"
+            height="48"
+            className="rounded-circle"
+            style={{ objectFit: "cover" }}
+          />
+          <div
+            className="rounded rounded-3 p-2"
+            style={{ backgroundColor: "#3A3B3C" }}
+          >
+            <span className="fw-semibold" style={{ color: "#E4E6EB" }}>
+              Lisa
+            </span>
+            <br />
+            <span style={{ color: "#E4E6EB" }}>จริงค่า</span>
+            <div className="d-flex align-items-center gap-1">
+              <img src="/like.svg" width={20}></img>
+              <span style={{ color: "#B0B3B8" }}>999 คน</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Reply Example */}
+        <div className="d-flex gap-2 my-2 ps-5">
+          <img
+            src="/profileImages/puppy.jpg"
+            width="48"
+            height="48"
+            className="rounded-circle"
+            style={{ objectFit: "cover" }}
+          />
+          <div
+            className="rounded rounded-3 p-2"
+            style={{ backgroundColor: "#3A3B3C" }}
+          >
+            <span className="fw-semibold" style={{ color: "#E4E6EB" }}>
+              หมาน้อย
+            </span>
+            <br />
+            <span style={{ color: "#E4E6EB" }}>จริงค้าบบบบบบบบ</span>
+            <div className="d-flex align-items-center gap-1">
+              <img src="/like.svg" width={20}></img>
+              <span style={{ color: "#B0B3B8" }}>2 คน</span>
+            </div>
+          </div>
+        </div>
+
+        {/* map-loop render Comment component here */}
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
