@@ -18,7 +18,7 @@ export default function Home() {
         <PostOwnner name="Poonnapat Panumonwatee" id="640610692" text="555" like="100" image="/profileImages/pfp.jpg"/>
 
         {/* Comment Example */}
-        <Comment userImagePath="/profileImages/lisa.jpg" username="Lisa" commentText="Bro speaking fact" likeNum='69420' />
+        <Comment userImagePath="/profileImages/lisa.jpg" username="Lisa" commentText="Bro speaking fact" likeNum="69420" />
 
         {/* <div className="d-flex gap-2 my-2">
           <img

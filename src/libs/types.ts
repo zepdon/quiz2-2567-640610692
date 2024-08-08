@@ -5,8 +5,8 @@ interface commentprops {
 userImagePath:string;
 username:string;
 commentText:string;
-likeNum:number;
-replies:ReplyProps[];
+likeNum:string;
+replies ?:ReplyProps[];
 }
 export type { commentprops}
 
@@ -14,6 +14,6 @@ interface ReplyProps {
 userImagePath:string;
 username:string;
 replyText:string;
-likeNum:number;
+likeNum:string;
 }
 export type { ReplyProps };

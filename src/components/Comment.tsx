@@ -12,6 +12,7 @@ export default function Comment({
   return (
       // {/* your code for Comment component here ... */}
       // {/* You can use map-loop to render Reply component here */}
+
       <div className="d-flex gap-2 my-2">
           <img
             src={userImagePath}
